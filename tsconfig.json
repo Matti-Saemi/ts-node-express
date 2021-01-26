@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib",
+        "allowJs": false,
+        "target": "es2017",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "importHelpers": true,
+        "lib": [ "es2017", "dom" ]
+    },
+    "include": [
+        "app/**/*", 
+        "src/index.ts", 
+        "src/api-server.ts", 
+        "src/library/express-server.ts", 
+        "src/controllers", 
+        "src/models", 
+        "src/tools"    
+    ]
+}
