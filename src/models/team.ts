@@ -21,7 +21,7 @@ export class Teams {
         return this.queryAllTeams();
     }
 
-    public static store(newTeam: Team, ): Promise<void> {
+    public static store(newTeam: Team): Promise<void> {
         return this.get(newTeam.name).then(existingTeam => {
             if (!existingTeam) {
                 return this.addNewTeam(newTeam);
