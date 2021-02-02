@@ -9,7 +9,7 @@ This app consists of an `express` api server, a controller to handle the route m
 
 The language used is `TypseScript` on top of `NodeJs`, with `express` framework for the server and `jest` framework for testing.
   
-To run the server, run this command `npm start`, and to run the tests use this command `npm test`.  You can access the server using this url `localhost:3000`.
+To run the server, run this command `npm start`, and to run the tests use this command `npm test`.  You can access the server using this url `http://localhost:3000`.
 
 ## Installation
 
