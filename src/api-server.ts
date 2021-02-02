@@ -19,7 +19,7 @@ export class ApiServer {
     private static configureRoutes(expressServer: ExpressServer) {
         expressServer
             .mountMiddleware(bodyParser.json())
-            .mountMiddleware(bodyParser.urlencoded({ extended: false }))
+            .mountMiddleware(bodyParser.urlencoded({ extended: true }))
             .mountMiddleware(this.handleMiddlewares)
             .mountApiRoute("/", "GET", this.handleIndex)
             .mountApiRoute("/teams/:team_name", "GET", TeamsHandler.handleFindTeam)
